@@ -19,11 +19,11 @@ body{font-family:'Inter',sans-serif;background:#0a0714;color:#fff;overflow-x:hid
 #bg-hero{
   opacity:1;
   background:
-    radial-gradient(ellipse 55% 38% at 50% 28%, rgba(190,150,255,.30) 0%, rgba(160,110,245,.16) 30%, rgba(120,70,220,.08) 50%, rgba(20,12,40,0) 72%),
-    radial-gradient(circle at 78% 18%, rgba(255,170,120,.14) 0%, rgba(255,170,120,0) 38%),
-    radial-gradient(circle at 15% 75%, rgba(110,180,255,.14) 0%, rgba(110,180,255,0) 45%),
-    radial-gradient(circle at 85% 80%, rgba(255,120,215,.14) 0%, rgba(255,120,215,0) 50%),
-    linear-gradient(160deg, #120b26 0%, #1a1038 38%, #241247 68%, #150c2c 100%);
+    radial-gradient(ellipse 55% 38% at 50% 26%, rgba(255,255,255,.62) 0%, rgba(255,236,214,.38) 22%, rgba(246,192,230,.22) 45%, rgba(205,180,240,0) 70%),
+    radial-gradient(circle at 78% 18%, rgba(255,200,150,.6) 0%, rgba(255,217,184,0) 38%),
+    radial-gradient(circle at 15% 75%, rgba(150,215,255,.55) 0%, rgba(191,227,247,0) 45%),
+    radial-gradient(circle at 85% 80%, rgba(255,160,225,.6) 0%, rgba(246,192,230,0) 50%),
+    linear-gradient(160deg, #c9aef2 0%, #b797ec 35%, #a87fe6 65%, #c0a0f0 100%);
 }
 #bg-hero::after{
   content:"";position:absolute;left:50%;top:34%;width:120vmin;height:120vmin;transform:translate(-50%,-50%);
@@ -47,9 +47,8 @@ body{font-family:'Inter',sans-serif;background:#0a0714;color:#fff;overflow-x:hid
 }
 #bg-end{
   background:
-    radial-gradient(ellipse 60% 50% at 50% 38%, rgba(200,160,255,.26) 0%, rgba(200,160,255,0) 65%),
-    radial-gradient(ellipse 80% 30% at 50% 100%, rgba(123,63,242,.18) 0%, rgba(123,63,242,0) 70%),
-    linear-gradient(170deg, #160d2e 0%, #221344 50%, #10081f 100%);
+    radial-gradient(ellipse 60% 50% at 50% 40%, rgba(255,255,255,.55) 0%, rgba(255,255,255,0) 65%),
+    linear-gradient(170deg, #e6daf8 0%, #d9c8f2 50%, #cdb9ee 100%);
 }
 
 #scene{position:fixed;inset:0;z-index:1;pointer-events:none}
@@ -140,28 +139,27 @@ section .inner{pointer-events:auto;text-align:center;padding:0 6vw;max-width:120
 #s-awaken p{margin-top:24px;color:#ffd9b0;font-weight:300;font-size:clamp(14px,1.5vw,18px);letter-spacing:.05em}
 
 #s-end .inner{max-width:1000px}
-#s-end h2{font-size:clamp(30px,5vw,68px);line-height:1.28;font-weight:300;color:#f3eefc}
-#s-end h2 em{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;
-  background:linear-gradient(100deg,#c9a9ff,#ff9ee9);-webkit-background-clip:text;background-clip:text;color:transparent}
-#s-end .mail{display:inline-block;margin-top:38px;font-size:clamp(18px,2.6vw,34px);color:#f3eefc;text-decoration:none;
-  border-bottom:1px solid rgba(243,238,252,.4);padding-bottom:6px;transition:border-color .3s,transform .3s}
-#s-end .mail:hover{border-color:#f3eefc;transform:translateY(-2px)}
+#s-end h2{font-size:clamp(30px,5vw,68px);line-height:1.28;font-weight:300;color:#241740}
+#s-end h2 em{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;color:#5b2bd6}
+#s-end .mail{display:inline-block;margin-top:38px;font-size:clamp(18px,2.6vw,34px);color:#241740;text-decoration:none;
+  border-bottom:1px solid rgba(36,23,64,.4);padding-bottom:6px;transition:border-color .3s,transform .3s}
+#s-end .mail:hover{border-color:#241740;transform:translateY(-2px)}
 .footer-row{margin-top:54px;display:flex;gap:28px;justify-content:center;flex-wrap:wrap}
-.footer-row a{color:#cdb4f0;text-decoration:none;font-size:13px;letter-spacing:.12em;text-transform:uppercase;opacity:.75;transition:opacity .3s}
+.footer-row a{color:#3c2a66;text-decoration:none;font-size:13px;letter-spacing:.12em;text-transform:uppercase;opacity:.75;transition:opacity .3s}
 .footer-row a:hover{opacity:1}
-.footer-note{margin-top:40px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#cdb4f0;opacity:.5}
+.footer-note{margin-top:40px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#3c2a66;opacity:.5}
 
 .rv{display:inline-block;transform:translateY(110%);opacity:0}
 
 /* ---------- LOADER ---------- */
-#loader{position:fixed;inset:0;z-index:50;background:linear-gradient(160deg,#120b26,#241247);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;transition:opacity .9s,visibility .9s}
+#loader{position:fixed;inset:0;z-index:50;background:linear-gradient(160deg,#d2bdf4,#b394ea);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;transition:opacity .9s,visibility .9s}
 #loader.done{opacity:0;visibility:hidden}
-#loader .l-logo{display:flex;align-items:baseline;gap:8px;color:#f3eefc}
+#loader .l-logo{display:flex;align-items:baseline;gap:8px;color:#241740}
 #loader .l-logo b{font-weight:600;letter-spacing:.34em;font-size:26px}
 #loader .l-logo span{font-family:'Pinyon Script',cursive;font-size:34px}
-#loader .pct{font-size:13px;letter-spacing:.3em;color:#f3eefc;opacity:.7}
-#loader .bar{width:180px;height:1.5px;background:rgba(243,238,252,.2);overflow:hidden;border-radius:2px}
-#loader .bar i{display:block;height:100%;width:0%;background:#f3eefc;transition:width .2s}
+#loader .pct{font-size:13px;letter-spacing:.3em;color:#241740;opacity:.7}
+#loader .bar{width:180px;height:1.5px;background:rgba(36,23,64,.2);overflow:hidden;border-radius:2px}
+#loader .bar i{display:block;height:100%;width:0%;background:#241740;transition:width .2s}
 
 @media (max-width:720px){
   header{padding:11px 18px;border-radius:16px}
@@ -204,14 +202,15 @@ section .inner{pointer-events:auto;text-align:center;padding:0 6vw;max-width:120
 <main>
   <section id="s-hero">
     <div class="inner">
-      <div class="kicker"><span class="rv">Stories become</span></div>
+      <div class="kicker"><span class="rv">STOA &mdash; Prologue &middot; Stories become</span></div>
       <h1 class="giant"><span class="rv">Worlds</span></h1>
-      <p class="hero-sub"><span class="rv">STOA builds living brands &mdash; story, identity, growth.</span></p>
+      <p class="hero-sub"><span class="rv">STOA is the agency where business becomes story. We explore, evolve and expand ambitious brands.</span></p>
     </div>
   </section>
 
   <section id="s-quote">
     <div class="inner">
+      <div class="kicker svc-kicker"><span class="rv">Chapter I &middot; The belief</span></div>
       <p class="quote">
         <span class="rv thin">The best businesses</span> <span class="rv">don&rsquo;t just</span><br>
         <span class="rv">speak to</span> <em class="rv">us.</em><br>
@@ -222,7 +221,7 @@ section .inner{pointer-events:auto;text-align:center;padding:0 6vw;max-width:120
 
   <section id="s-services">
     <div class="inner">
-      <div class="kicker svc-kicker"><span class="rv">What we do</span></div>
+      <div class="kicker svc-kicker"><span class="rv">Chapter II &middot; The craft</span></div>
       <div class="svc">
         <div><span class="rv"><span class="num">01</span> Brand <em>Strategy</em></span></div>
         <div><span class="rv"><span class="num">02</span> Identity &amp; <em>Design</em></span></div>
@@ -236,6 +235,7 @@ section .inner{pointer-events:auto;text-align:center;padding:0 6vw;max-width:120
 
   <section id="s-fire">
     <div class="inner">
+      <div class="kicker" style="color:#ffb84d;margin-bottom:32px"><span class="rv">Chapter III &middot; The forge</span></div>
       <p class="fire-quote">
         <span class="rv">Growth is what you</span><br>
         <span class="rv">see, feel, hear,</span> <em class="rv">interact with.</em>
@@ -245,6 +245,7 @@ section .inner{pointer-events:auto;text-align:center;padding:0 6vw;max-width:120
 
   <section id="s-awaken">
     <div class="inner">
+      <div class="kicker" style="color:#ffd9b0;margin-bottom:24px"><span class="rv">Chapter IV &middot; The rise</span></div>
       <h2 class="giant2"><span class="rv">Awaken</span><br><span class="rv">your business.</span></h2>
       <p><span class="rv">Discover. Build. Scale. Transform.</span></p>
     </div>
@@ -252,6 +253,7 @@ section .inner{pointer-events:auto;text-align:center;padding:0 6vw;max-width:120
 
   <section id="s-end">
     <div class="inner">
+      <div class="kicker" style="color:#5b2bd6;margin-bottom:24px"><span class="rv">Epilogue &middot; Your story begins</span></div>
       <h2><span class="rv">Let</span> <em class="rv">STOA</em> <span class="rv">help you tell your story</span><br><em class="rv">the way it was meant.</em></h2>
       <a class="mail rv" href="mailto:hello@stoa.agency">hello@stoa.agency</a>
       <div class="footer-row">
@@ -278,12 +280,12 @@ const isMobile = matchMedia('(max-width:768px)').matches || 'ontouchstart' in wi
 
 /* ---------- palettes per phase ---------- */
 const PHASES = [
-  { a:[1.00,0.60,0.95], b:[0.55,0.38,1.00], c:[0.30,0.14,0.60], glow:1.6, dark:1 }, // hero — neon glass on dark nebula
+  { a:[1.00,0.55,0.90], b:[0.50,0.34,1.00], c:[1.00,0.74,0.42], glow:1.45, dark:0 }, // hero — light pastel glass
   { a:[0.60,0.30,1.00], b:[0.90,0.32,0.95], c:[0.22,0.08,0.55], glow:1.35, dark:1 }, // dark violet neon
   { a:[0.62,0.88,1.00], b:[0.88,0.55,1.00], c:[1.00,0.68,0.94], glow:1.2,  dark:1 }, // crystal glass
   { a:[1.00,0.80,0.32], b:[1.00,0.42,0.10], c:[0.55,0.15,0.03], glow:1.6,  dark:1 }, // fire
   { a:[1.00,0.90,0.55], b:[1.00,0.55,0.16], c:[0.66,0.22,0.05], glow:1.7,  dark:1 }, // awaken
-  { a:[0.92,0.78,1.00], b:[0.62,0.45,1.00], c:[0.20,0.10,0.45], glow:1.2,  dark:1 }  // end — violet dusk
+  { a:[1.00,0.84,0.96], b:[0.78,0.66,1.00], c:[0.97,0.90,1.00], glow:0.9,  dark:0 }  // end — light lilac dawn
 ];
 
 /* ---------- three setup ---------- */
@@ -484,7 +486,7 @@ function makeWing(side){
   return g;
 }
 const wingL = makeWing(1), wingR = makeWing(-1);
-proc.add(wingL, wingR);
+dragon.add(wingL, wingR); /* wings live on the dragon itself, so the sculpted model gets them too */
 
 /* legs */
 function makeLeg(side){
@@ -633,7 +635,7 @@ function bgOpacity(p){
   bgDark.style.opacity = Math.max(band(.2,.18), band(.4,.18));
   bgFire.style.opacity = Math.max(band(.6,.17), band(.8,.17));
   bgEnd.style.opacity  = band(1,.15);
-  document.body.classList.add('dark-ui'); /* full dark luxury palette */
+  document.body.classList.toggle('dark-ui', p>.11 && p<.9); /* light → dark → light story arc */
 }
 
 /* ---------- dragon motion ---------- */
@@ -655,6 +657,13 @@ function updateDragon(time, p){
     glbModel.rotation.y = -0.5 + Math.sin(time*0.35)*0.45 + p*2.2;
     glbModel.rotation.x = Math.sin(time*0.5)*0.06;
     glbModel.position.y = Math.sin(time*0.9)*0.18;
+    /* wings mounted on the sculpted dragon's shoulders, slow majestic flap */
+    const gflap = Math.sin(time*1.7)*.55;
+    const bob = glbModel.position.y;
+    wingL.position.set(.45, .9 + bob, -.2);
+    wingR.position.set(-.45, .9 + bob, -.2);
+    wingL.rotation.set(-.3 + gflap*.35, .5, .25 + gflap);
+    wingR.rotation.set(-.3 + gflap*.35, -.5, -(.25 + gflap));
     return;
   }
 
